@@ -1,0 +1,206 @@
+[
+    { 
+    "_id": "5c8a1d5b0190b214360dc036",
+    "name": "Node Package Manager",
+    "correct":true,
+    "question":"5d7a514b5d2c12c7449be042"
+    },
+    { 
+    "_id": "5c8a1d5b0190b214360dc037",
+    "name": "Node Project Manager",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be042"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc038",
+    "name": "New Project Manager",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be042"
+
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc039",
+    "name": "New Package Manager",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be042"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc000",
+    "name": "I/O bound Applications",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be043"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc001",
+    "name": "Data Streaming Applications",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be043"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc002",
+    "name": "Data Intensive Realtime Applications (DIRT)",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be043"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc003",
+    "name": "All",
+    "correct":true,
+    "question":"5d7a514b5d2c12c7449be043"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc004",
+    "name": "fs.write(path, flags[, mode], callback)",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be044"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc005",
+    "name": "fs.writeFile(path, flags[, mode], callback)",
+    "correct":true,
+    "question":"5d7a514b5d2c12c7449be044"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc006",
+    "name": "s.writePath(path, flags[, mode], callback)",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be044"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc007",
+    "name": "None",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be044"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc008",
+    "name": "fs.readDirectory(path[, mode], callback)",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be045"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc009",
+    "name": "fs.read(path[, mode], callback)",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be045"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc010",
+    "name": "fs.readdir(path, callback)",
+    "correct":true,
+    "question":"5d7a514b5d2c12c7449be045"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc011",
+    "name": "None",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be045"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc012",
+    "name": "console.log('endianness : ' + os.endianness);",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be046"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc013",
+    "name": "console.log('endianness : ' + os.endianness());",
+    "correct":true,
+    "question":"5d7a514b5d2c12c7449be046"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc014",
+    "name": "console.log('endianness : ' + os.getEndianness());",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be046"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc015",
+    "name": "None",
+    "correct":false,
+    "question":"5d7a514b5d2c12c7449be046"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc016",
+    "name": "path.join('/test', 'test1', '2slashes/1slash', 'tab', '..')",
+    "correct":true,
+    "question":"5c8a1d5b0190b214360dc031"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc017",
+    "name": "path.combine('/test', 'test1', '2slashes/1slash', 'tab', '..')",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc031"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc018",
+    "name": "buffer.join('/test', 'test1', '2slashes/1slash', 'tab', '..')",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc031"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc019",
+    "name": "None",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc031"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc020",
+    "name": "dns.reverse(ip, callback)",
+    "correct":true,
+    "question":"5c8a1d5b0190b214360dc032"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc021",
+    "name": "dns.resolve(hostname[, rrtype], callback)",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc032"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc022",
+    "name": "dns.resolve4(hostname, callback)",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc032"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc023",
+    "name": "None",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc032"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc024",
+    "name": "http.createServer(callback)",
+    "correct":true,
+    "question":"5c8a1d5b0190b214360dc033"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc025",
+    "name": "http.createWebServer(callback)",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc033"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc026",
+    "name": "http.createHTTPServer(callback)",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc033"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc027",
+    "name": "None",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc033"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc028",
+    "name": "Module",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc034"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc029",
+    "name": "Component",
+    "correct":true,
+    "question":"5c8a1d5b0190b214360dc034"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc100",
+    "name": "Package",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc034"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc101",
+    "name": "Class",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc034"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc102",
+    "name": "A transpiler.",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc035"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc103",
+    "name": "An interpreter",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc035"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc104",
+    "name": "A Compiler",
+    "correct":false,
+    "question":"5c8a1d5b0190b214360dc035"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc115",
+    "name": "Both Compiler and Transpilar",
+    "correct":true,
+    "question":"5c8a1d5b0190b214360dc035"
+    }
+
+]
