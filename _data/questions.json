@@ -1,0 +1,35 @@
+[
+    { 
+    "_id": "5d7a514b5d2c12c7449be042",
+    "name": "In which of the following areas, Node.js is perfect to use?"
+    },
+    { 
+    "_id": "5d7a514b5d2c12c7449be043",
+    "name": "What npm stands for?"
+    },{ 
+    "_id": "5d7a514b5d2c12c7449be044",
+    "name": "Which method of fs module is used to write a file?"
+    },{ 
+    "_id": "5d7a514b5d2c12c7449be045",
+    "name": "Which method of fs module is used to read a directory?"
+    },{ 
+    "_id": "5d7a514b5d2c12c7449be046",
+    "name": "Which of the following code print the endianness of operating system?"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc031",
+    "name": "Which of the following is the correct way to get a joint path?"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc032",
+    "name": "Which of the following method resolves an ip address to an array of hostnames?"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc033",
+    "name": "Which of the following code can create a web server?"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc034",
+    "name": "Everything in React is a _"
+    },{ 
+    "_id": "5c8a1d5b0190b214360dc035",
+    "name": "What is Babel?"
+    }
+
+]

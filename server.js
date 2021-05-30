@@ -1,11 +1,29 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
+const connectDB = require("./config/db");
+const errorHandler = require("./middleware/error");
+
+// Route files
+const students = require("./routes/students");
 
 // load .env variables
 dotenv.config({ path: "./config/config.env" });
 
 const app = express();
 app.use(express.json());
+
+// Database connection
+connectDB();
+
+// Enable CORS
+app.use(cors());
+
+// Mount routers
+app.use("/api/students", students);
+
+// error handler
+app.use(errorHandler);
 
 const port = process.env.PORT || 5000;
 
