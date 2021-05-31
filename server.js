@@ -6,6 +6,7 @@ const errorHandler = require("./middleware/error");
 
 // Route files
 const students = require("./routes/students");
+const questions = require("./routes/questions");
 
 // load .env variables
 dotenv.config({ path: "./config/config.env" });
@@ -21,6 +22,7 @@ app.use(cors());
 
 // Mount routers
 app.use("/api/students", students);
+app.use("/api/questions", questions);
 
 // error handler
 app.use(errorHandler);
