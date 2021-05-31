@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { createStudent } = require("../controllers/students");
+const {
+  createStudent,
+  updateStudentScore,
+} = require("../controllers/students");
 
 router.route("/").post(createStudent);
+router.route("/:id").put(updateStudentScore);
 
 module.exports = router;

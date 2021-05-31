@@ -11,7 +11,7 @@ const StudentSchema = new mongoose.Schema({
   score: {
     type: Number,
     default: 0,
-    min: 0,
+    min: [0, "score min value 0"],
     max: 50,
   },
 });
