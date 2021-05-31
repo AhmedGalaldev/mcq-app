@@ -53,7 +53,7 @@ exports.updateStudentScore = async (req, res, next) => {
         })
         .catch((err) => {
           next(
-            new ErrorResponse(`score must be between min 0 and max 50`, 400)
+            new ErrorResponse(`Score must be between min 0 and max 50`, 400)
           );
         });
     }
