@@ -2,7 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 const { getQuestions } = require("../controllers/questions");
+const auth = require("../middleware/auth");
 
-router.route("/").get(getQuestions);
+router.route("/").get(auth, getQuestions);
 
 module.exports = router;
