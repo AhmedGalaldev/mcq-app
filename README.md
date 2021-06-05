@@ -7,6 +7,9 @@ git clone https://github.com/AhmedGalaldev/mcq-app.git
 ```bash
 cd backend
 npm install
+```
+
+```bash
 cd mcq-front
 npm install
 ```
