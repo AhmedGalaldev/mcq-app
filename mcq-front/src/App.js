@@ -11,25 +11,32 @@ import { Route, Switch } from "react-router";
 
 const app = () => {
   const questions = useSelector((state) => state.questions);
+  const student = useSelector((state) => state.student);
 
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const dispatch = useDispatch();
 
-  const getQuestions = async () => {
+  const getQuestions = async (name) => {
     try {
       setLoading(true);
-      await axios.get("./questions").then((data) => {
-        dispatch(examActions.setQuestions(data.data));
-      });
+      await axios
+        .get("./questions", {
+          params: {
+            name: name,
+          },
+        })
+        .then((data) => {
+          dispatch(examActions.setQuestions(data.data));
+          history.push("/0");
+        })
+        .catch((err) => {});
     } catch (e) {
+      setError(true);
     } finally {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-    getQuestions();
-  }, []);
 
   const qst = questions.map((q, index) => {
     return (
@@ -42,6 +49,7 @@ const app = () => {
       </Route>
     );
   });
+
   return (
     <Container maxWidth="sm">
       <Grid
@@ -52,9 +60,15 @@ const app = () => {
         justify="center"
         style={{ minHeight: "100vh" }}
       >
-        {/* <Student /> */}
-        <Switch>{qst}</Switch>
-        {/* <Result /> */}
+        <Switch>
+          <Route path="/" exact>
+            <Student getQuestions={getQuestions} />
+          </Route>
+          {qst}
+        </Switch>
+        <Route path="/results">
+          <Result student={student} />
+        </Route>
       </Grid>
     </Container>
   );

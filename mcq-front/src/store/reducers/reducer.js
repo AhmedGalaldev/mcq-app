@@ -1,7 +1,7 @@
 import { ADD_QUESTIONS, ADD_STUDENT } from "../actions/action";
 const initialState = {
   questions: [],
-  student: {},
+  student: null,
 };
 
 const reducer = (state = initialState, action) => {

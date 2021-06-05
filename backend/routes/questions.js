@@ -5,6 +5,6 @@ const { getQuestions } = require("../controllers/questions");
 const auth = require("../middleware/auth");
 
 //auth
-router.route("/").get(getQuestions);
+router.route("/").get(auth, getQuestions);
 
 module.exports = router;

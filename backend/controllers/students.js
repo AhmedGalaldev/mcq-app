@@ -28,34 +28,26 @@ exports.updateStudentScore = async (req, res, next) => {
         new ErrorResponse(`The Student with id ${req.params.id} Not Found`, 404)
       );
     }
-    const answer = await Answer.findById(req.body.answerId);
-    if (!answer) {
-      return;
-    }
 
-    if (answer.correct) {
-      //   student = await Student.findOneAndUpdate(
-      //     req.params.id,
-      //     {
-      //       $inc: {
-      //         score: 10,
-      //       },
-      //     },
-      //     { new: true, runValidators: true }
-      //   );
-
-      student = await Student.findOne({ _id: req.params.id });
-      student.score += 10;
-      await student
-        .save()
-        .then((result) => {
-          res.status(200).json(result);
-        })
-        .catch((err) => {
-          next(
-            new ErrorResponse(`Score must be between min 0 and max 50`, 400)
-          );
-        });
+    try {
+      const answer = await Answer.findById(req.body.answerId);
+      if (answer.correct) {
+        student.score += 10;
+        await student
+          .save()
+          .then((result) => {
+            res.status(200).json(result);
+          })
+          .catch((err) => {
+            next(
+              new ErrorResponse(`Score must be between min 0 and max 50`, 400)
+            );
+          });
+      } else {
+        res.status(200).json(student);
+      }
+    } catch (err) {
+      return next(new ErrorResponse(`please choose an answer`, 404));
     }
   } catch (e) {
     next(new ErrorResponse(`${e.message}`, 404));

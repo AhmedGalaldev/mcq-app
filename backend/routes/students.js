@@ -8,6 +8,6 @@ const {
 } = require("../controllers/students");
 
 router.route("/").post(createStudent);
-router.route("/:id").put(auth, updateStudentScore);
+router.route("/:id").put(updateStudentScore);
 
 module.exports = router;

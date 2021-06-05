@@ -4,7 +4,8 @@
       "files": ["**/*.js"],
       "rules": {
         "react-hooks/exhaustive-deps": "off"
-      }
+      },
+      "parser": "babel-eslint"
     }
   ]
 }
