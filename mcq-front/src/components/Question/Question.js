@@ -40,6 +40,7 @@ const question = ({ question, answers, index }) => {
       setErrorMessage(error.response.data.error);
     }
   };
+
   return (
     <form onSubmit={handleClickAnswer}>
       {errorMessage && <p style={{ color: "red" }}> {errorMessage} </p>}

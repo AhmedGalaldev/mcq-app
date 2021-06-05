@@ -3,8 +3,6 @@ import Question from "./components/Question/Question";
 import Student from "./components/Student/Student";
 import Result from "./components/Result/Result";
 import axios from "./axios";
-import { useEffect, useState } from "react";
-
 import { useSelector, useDispatch } from "react-redux";
 import * as examActions from "./store/actions/action";
 import { Route, Switch } from "react-router";
@@ -12,14 +10,10 @@ import { Route, Switch } from "react-router";
 const app = () => {
   const questions = useSelector((state) => state.questions);
   const student = useSelector((state) => state.student);
-
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
   const dispatch = useDispatch();
 
   const getQuestions = async (name) => {
     try {
-      setLoading(true);
       await axios
         .get("./questions", {
           params: {
@@ -31,19 +25,17 @@ const app = () => {
           history.push("/0");
         })
         .catch((err) => {});
-    } catch (e) {
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
+    } catch (e) {}
   };
 
   const qst = questions.map((q, index) => {
+    const ansersArr = q.answers.sort(() => 0.5 - Math.random());
+
     return (
       <Route path={`/${index}`} key={q._id}>
         <Question
           question={q.question.name}
-          answers={q.answers}
+          answers={ansersArr}
           index={index}
         />
       </Route>

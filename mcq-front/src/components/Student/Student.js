@@ -17,13 +17,11 @@ const student = (props) => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const history = useHistory();
-  const [loading, setLoading] = useState(false);
+
   const handleStudentName = async (evt) => {
     evt.preventDefault();
 
     try {
-      setLoading(true);
-
       await axios
         .post("./students", { name })
         .then((data) => {
@@ -36,8 +34,6 @@ const student = (props) => {
         });
     } catch (e) {
       // console.log(e.error);
-    } finally {
-      setLoading(false);
     }
   };
 
