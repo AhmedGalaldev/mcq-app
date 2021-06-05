@@ -4,6 +4,7 @@ const router = express.Router();
 const { getQuestions } = require("../controllers/questions");
 const auth = require("../middleware/auth");
 
-router.route("/").get(auth, getQuestions);
+//auth
+router.route("/").get(getQuestions);
 
 module.exports = router;
